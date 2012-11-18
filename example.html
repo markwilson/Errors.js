@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="../lib/js/Errors.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+			// this should be executed after initialising frameworks but before any custom scripts
+			Errors.initialise({
+				ajax: {
+					url: '/api/1/errors',
+					method: 'POST'
+				},
+				debugMode: true,
+				customHandler: function (errorData) {
+					console.log(errorData);
+				}
+			});
+		</script>
+		
+		<script type="text/javascript" charset="utf-8">
+			force an error to occur
+		</script>
+	</head>
+	
+	<body>
+		
+	</body>
+</html>
